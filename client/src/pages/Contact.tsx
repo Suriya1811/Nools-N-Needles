@@ -1,16 +1,22 @@
 import ContactForm from '@/components/ContactForm';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Instagram, MapPin } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import bannerImage from '@/image/banner.png';
 
 export default function Contact() {
   return (
     <div className="min-h-screen">
-      <section className="bg-secondary/20 py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
+      <section className="relative w-full py-16 md:py-24 overflow-hidden flex items-center bg-[#f8f5f1]">
+        <div
+          className="absolute inset-0 bg-cover bg-[center_top] md:bg-center"
+          style={{ backgroundImage: `url(${bannerImage})` }}
+        />
+        <div className="absolute inset-0 bg-[#f8f5f1]/40" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#3d2b2c] mb-4 drop-shadow-sm">
             Get in Touch
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-[#3d2b2c]/80 font-medium max-w-2xl mx-auto drop-shadow-sm">
             Have questions or ready to order? We'd love to hear from you!
           </p>
         </div>
@@ -38,11 +44,11 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
                       <a 
-                        href="mailto:noolsnneedles@gmail.com" 
+                        href="mailto:noolsnneedlesenquiry@gmail.com" 
                         className="text-muted-foreground hover:text-foreground transition-colors"
                         data-testid="link-contact-email"
                       >
-                        noolsnneedles@gmail.com
+                        noolsnneedlesenquiry@gmail.com
                       </a>
                     </div>
                   </div>
@@ -53,18 +59,18 @@ export default function Contact() {
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
-                      <Phone className="h-5 w-5 text-primary" />
+                      <Instagram className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">WhatsApp / Phone</h3>
+                      <h3 className="font-semibold mb-1">Instagram</h3>
                       <a 
-                        href="https://wa.me/919597478911" 
+                        href="https://www.instagram.com/noolsnneedles?igsh=cGV0bnRoa2pmbGJp" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-foreground transition-colors"
-                        data-testid="link-contact-whatsapp"
+                        data-testid="link-contact-instagram"
                       >
-                        +91 9597478911
+                        @noolsnneedles
                       </a>
                     </div>
                   </div>

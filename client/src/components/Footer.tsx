@@ -30,21 +30,16 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
-              <a href="mailto:noolsnneedles@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors" data-testid="link-email">
+              <a href="mailto:noolsnneedlesenquiry@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors" data-testid="link-email">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">noolsnneedles@gmail.com</span>
-              </a>
-              <a href="https://wa.me/919597478911" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors" data-testid="link-whatsapp-footer">
-                <Phone className="h-4 w-4" />
-                <span className="text-sm">+91 9597478911</span>
+                <span className="text-sm">noolsnneedlesenquiry@gmail.com</span>
               </a>
               <div className="flex gap-3 pt-2">
-                <Button variant="outline" size="icon" className="rounded-full" data-testid="button-instagram">
-                  <Instagram className="h-4 w-4" />
-                </Button>
-                <Button variant="outline" size="icon" className="rounded-full" data-testid="button-facebook">
-                  <Facebook className="h-4 w-4" />
-                </Button>
+                <a href="https://www.instagram.com/noolsnneedles?igsh=cGV0bnRoa2pmbGJp" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="icon" className="rounded-full hover:bg-primary hover:text-white transition-colors" data-testid="button-instagram">
+                    <Instagram className="h-4 w-4" />
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

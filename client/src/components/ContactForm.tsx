@@ -11,7 +11,6 @@ import { useToast } from '@/hooks/use-toast';
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Please enter a valid email'),
-  phone: z.string().min(10, 'Please enter a valid phone number'),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 });
 
@@ -26,7 +25,6 @@ export default function ContactForm() {
     defaultValues: {
       name: '',
       email: '',
-      phone: '',
       message: '',
     },
   });
@@ -71,20 +69,6 @@ export default function ContactForm() {
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input type="email" placeholder="your@email.com" {...field} data-testid="input-email" />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="phone"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Phone</FormLabel>
-              <FormControl>
-                <Input placeholder="+91 9876543210" {...field} data-testid="input-phone" />
               </FormControl>
               <FormMessage />
             </FormItem>

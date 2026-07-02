@@ -1,12 +1,17 @@
 import Hero from '@/components/Hero';
 import ProductCard from '@/components/ProductCard';
 import AddOns from '@/components/AddOns';
-import { products } from '@shared/products';
+import { useQuery } from '@tanstack/react-query';
+import type { Product } from '@shared/schema';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 
 export default function Home() {
+  const { data: products = [], isLoading } = useQuery<Product[]>({
+    queryKey: ["/api/products"],
+  });
+
   const featuredProducts = products.slice(0, 4);
 
   return (
@@ -23,11 +28,15 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {featuredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        {isLoading ? (
+          <div className="text-center py-8">Loading products...</div>
+        ) : (
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6 mb-8">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        )}
 
         <div className="text-center">
           <Link href="/products">

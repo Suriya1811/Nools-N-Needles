@@ -1,19 +1,19 @@
-import heroImage from '@assets/stock_images/beautiful_handmade_w_f3859de4.jpg';
-import roseImage from '@assets/stock_images/handmade_crochet_ros_fab8b740.jpg';
-import tulipImage from '@assets/stock_images/handmade_crochet_tul_85e9c09d.jpg';
-import sunflowerImage from '@assets/stock_images/handmade_crochet_sun_11b50985.jpg';
-import daisyImage from '@assets/stock_images/handmade_crochet_dai_b190b28d.jpg';
-import hibiscusImage from '@assets/stock_images/handmade_crochet_hib_c82ccae4.jpg';
-import lavenderImage from '@assets/stock_images/handmade_crochet_lav_81adbde3.jpg';
-import cherryBlossomImage from '@assets/stock_images/handmade_crochet_che_1e83d338.jpg';
-import miniBouquetImage from '@assets/stock_images/handmade_crochet_sma_f506f14e.jpg';
-import keychainImage from '@assets/stock_images/handmade_crochet_flo_ea060fb7.jpg';
-import hairClipImage from '@assets/stock_images/handmade_crochet_flo_67aa6de3.jpg';
-import flowerPotImage from '@assets/stock_images/handmade_crochet_flo_4e0b5556.jpg';
-import mediumBouquetImage from '@assets/stock_images/handmade_crochet_med_18a0c715.jpg';
-import largeBouquetImage from '@assets/stock_images/handmade_crochet_lar_e28172d1.jpg';
-import customBouquetImage from '@assets/stock_images/handmade_crochet_per_375ac7e3.jpg';
-import craftingImage from '@assets/stock_images/hands_crafting_croch_035e5e7d.jpg';
+const heroImage = 'https://placehold.co/1200x800?text=Hero+Image';
+const roseImage = 'https://placehold.co/400x300?text=Rose';
+const tulipImage = 'https://placehold.co/400x300?text=Tulip';
+const sunflowerImage = 'https://placehold.co/400x300?text=Sunflower';
+const daisyImage = 'https://placehold.co/400x300?text=Daisy';
+const hibiscusImage = 'https://placehold.co/400x300?text=Hibiscus';
+const lavenderImage = 'https://placehold.co/400x300?text=Lavender';
+const cherryBlossomImage = 'https://placehold.co/400x300?text=Cherry+Blossom';
+const miniBouquetImage = 'https://placehold.co/400x300?text=Mini+Bouquet';
+const keychainImage = 'https://placehold.co/400x300?text=Keychain';
+const hairClipImage = 'https://placehold.co/400x300?text=Hair+Clip';
+const flowerPotImage = 'https://placehold.co/400x300?text=Flower+Pot';
+const mediumBouquetImage = 'https://placehold.co/400x300?text=Medium+Bouquet';
+const largeBouquetImage = 'https://placehold.co/400x300?text=Large+Bouquet';
+const customBouquetImage = 'https://placehold.co/400x300?text=Custom+Bouquet';
+const craftingImage = 'https://placehold.co/400x300?text=Crafting';
 
 export const images = {
   hero: heroImage,
