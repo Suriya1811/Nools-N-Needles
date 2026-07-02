@@ -5,7 +5,7 @@ import { insertProductSchema, insertCategorySchema } from "@shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/admin/login", (req, res) => {
-    const { username, password } = req.body;
+    const { username, password } = req.body || {};
     if (username === "Riya" && password === "Riya@1811") {
       res.json({ success: true, token: "admin-token-1811" });
     } else {

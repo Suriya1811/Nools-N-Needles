@@ -2,8 +2,16 @@ import express from "express";
 import { registerRoutes } from "./routes";
 
 const app = express();
-app.use(express.json({ limit: '50mb' }));
-app.use(express.urlencoded({ extended: false, limit: '50mb' }));
+
+app.use((req, res, next) => {
+  if (req.body) return next();
+  express.json({ limit: '50mb' })(req, res, next);
+});
+
+app.use((req, res, next) => {
+  if (req.body) return next();
+  express.urlencoded({ extended: false, limit: '50mb' })(req, res, next);
+});
 
 let initialized = false;
 
