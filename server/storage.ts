@@ -2,7 +2,7 @@ import { users, products, categories } from "@shared/schema";
 import type { User, InsertUser, Product, InsertProduct, Category, InsertCategory } from "@shared/schema";
 import { randomUUID } from "crypto";
 import { products as initialProducts } from "@shared/products";
-import { db } from "./db";
+import { db } from "./db.js";
 import { eq } from "drizzle-orm";
 
 export interface IStorage {
