@@ -1,7 +1,7 @@
-import { users, products, categories } from "@shared/schema";
-import type { User, InsertUser, Product, InsertProduct, Category, InsertCategory } from "@shared/schema";
+import { users, products, categories } from "../shared/schema.js";
+import type { User, InsertUser, Product, InsertProduct, Category, InsertCategory } from "../shared/schema.js";
 import { randomUUID } from "crypto";
-import { products as initialProducts } from "@shared/products";
+import { products as initialProducts } from "../shared/products.js";
 import { db } from "./db.js";
 import { eq } from "drizzle-orm";
 

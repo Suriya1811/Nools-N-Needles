@@ -1,7 +1,7 @@
 import type { Express, Request, Response, NextFunction } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage.js";
-import { insertProductSchema, insertCategorySchema } from "@shared/schema";
+import { insertProductSchema, insertCategorySchema } from "../shared/schema.js";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/admin/login", (req, res) => {
