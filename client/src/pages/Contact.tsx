@@ -45,7 +45,7 @@ export default function Contact() {
                       <h3 className="font-semibold mb-1">Email</h3>
                       <a 
                         href="mailto:noolsnneedlesenquiry@gmail.com" 
-                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        className="text-muted-foreground hover:text-foreground transition-colors break-all"
                         data-testid="link-contact-email"
                       >
                         noolsnneedlesenquiry@gmail.com
